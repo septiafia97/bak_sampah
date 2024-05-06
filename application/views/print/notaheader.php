@@ -1,11 +1,11 @@
 <?php foreach($datatransaksi as $data) {} ?>
 <body>
 	<div class="container">
-		<form action="<?php echo base_url(); ?>index.php/transaksi/simpannota" method="post" >
+		<form action="<?php echo base_url(); ?>/transaksi/simpannota" method="post" >
 			<div class="print" style="width: 400px !important;">
 				<div class="print-header">
 					<hr/>
-					<a href="<?php echo base_url(); ?>index.php/dashboard" onclick="return confirm('Pastikan untuk menyimpan atau mencetak Bukti Pembayaran Terlebih Dahulu. Apakah anda ingin Kembali kehalaman utama?');"><button type="button" class="btn btn-success btn-sm"><span class="fa fa-chevron-left"></span> Kembali</button></a>
+					<a href="<?php echo base_url(); ?>/dashboard" onclick="return confirm('Pastikan untuk menyimpan atau mencetak Bukti Pembayaran Terlebih Dahulu. Apakah anda ingin Kembali kehalaman utama?');"><button type="button" class="btn btn-success btn-sm"><span class="fa fa-chevron-left"></span> Kembali</button></a>
 					<button type="submit" class="btn btn-primary btn-sm"><span class="fa fa-save"></span> Simpan Nota</button>
 					<button type="button" class="btn btn-info btn-sm" onclick="printDiv('printMe')"><span class="fa fa-print"></span> Print</button>
 					<input type="hidden" name="no_nota" value="<?php echo $data['id_transaksi']; ?>">

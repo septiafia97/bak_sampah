@@ -3,7 +3,7 @@
     <!-- Control sidebar content goes here -->
     <div class="p-3">
       <h5>Ubah Password</h5>
-      <form action="<?php echo base_url(); ?>index.php/dashboard/ubahpassword" method="post">
+      <form action="<?php echo base_url(); ?>/dashboard/ubahpassword" method="post">
 		<div class="form-group">
 			<label>Password Baru</label>
 			<input type="password" name="password" class="form-control">
@@ -18,16 +18,6 @@
   </aside>
   <!-- /.control-sidebar -->
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Bank Sampah Keluraha Jenna'e
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved. | Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a>
-
-  </footer>
 </div>
 <!-- ./wrapper -->
 

@@ -96,7 +96,7 @@
 		<?php } ?>
 		<?php 
 			if($user['level'] == 'admin') {
-		?>
+		?> 
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
@@ -142,20 +142,6 @@
             </div>
             <!-- /.info-box -->
           </div>
-          <!-- /.col -->
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-money-bill"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Jumlah Penjualan</span>
-                <span class="info-box-number"><?php echo "Rp.".number_format($data5['jmlpenjualan'], 0, ',', '.'); ?></span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
         </div>
 		<?php } ?>
         <!-- /.row -->
@@ -172,7 +158,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-6">
-						<form action="<?php echo base_url(); ?>index.php/transaksi/pembelian" method="post">
+						<form action="<?php echo base_url(); ?>/transaksi/pembelian" method="post">
 							<div class="card">
 								<div class="card-header">
 									<h5 class="card-title">Pembelian</h5>
@@ -234,7 +220,7 @@
 					 	if($user['level']== 'admin') {
 					 ?>
 					<div class="col-lg-6">
-						<form action="<?php echo base_url(); ?>index.php/transaksi/penjualan" method="post">
+						<form action="<?php echo base_url(); ?>/transaksi/penjualan" method="post">
 							<div class="card">
 								<div class="card-header">
 									<h5 class="card-title">Penjualan</h5>
@@ -317,7 +303,7 @@
 function cek_db(){
         var sampah = $("#sampah").val(); 
         $.ajax({
-          url : "<?php echo base_url('index.php/dashboard/getsampah'); ?>", // file proses penginputan
+          url : "<?php echo base_url('/dashboard/getsampah'); ?>", // file proses penginputan
           data : 'kd_sampah='+sampah,
         }).success(function (data){
           var json = data,
@@ -330,7 +316,7 @@ function cek_db(){
 	  function cek_db1(){
         var sampah1 = $("#sampah1").val(); 
         $.ajax({
-          url : "<?php echo base_url('index.php/dashboard/getsampah1'); ?>", // file proses penginputan
+          url : "<?php echo base_url('/dashboard/getsampah1'); ?>", // file proses penginputan
           data : 'kd_sampah='+sampah1,
         }).success(function (data){
           var json = data,

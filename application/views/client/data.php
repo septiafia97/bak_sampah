@@ -9,7 +9,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Data</a></li>
-              <li class="breadcrumb-item active">Client</li>
+              <li class="breadcrumb-item active">Anggota</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -26,10 +26,10 @@
 					<div class="card-header">
 						<div class="row">
 							<div class="col-lg-6">
-								<h5 class="card-title">Data Client</h5>
+								<h5 class="card-title">Data Anggota</h5>
 							</div>
 							<div class="col-lg-6 text-right">
-								<a href="<?php echo base_url(); ?>index.php/client/tambah"><button type="button" class="btn btn-info btn-sm"><span class="fa fa-plus"></span> Tambah Data</button></a>
+								<a href="<?php echo base_url(); ?>client/tambah"><button type="button" class="btn btn-info btn-sm"><span class="fa fa-plus"></span> Tambah Data</button></a>
 							</div>
 						</div>
 					</div>
@@ -37,9 +37,11 @@
 						<table id="example2" class="table table-bordered table-stripped">
 							<thead>
 								<th width="20">No</th>
-								<th width="140">Id Client</th>
+								<th width="140">Id User</th>
 								<th>Nama</th>
 								<th>Alamat</th>
+								<th>No. Telp</th>
+								<th>Email</th>
 								<th>Aksi</th>
 							</thead>
 							<tbody>
@@ -52,9 +54,11 @@
 									<td><?php echo $data['id_client'];?> </td>
 									<td><?php echo $data['nama'];?> </td>
 									<td><?php echo $data['alamat'];?> </td>
+									<td><?php echo $data['no_telp'];?> </td>
+									<td><?php echo $data['email'];?> </td>
 									<td>
-										<a href="<?php echo base_url(); ?>index.php/client/edit/<?php echo $data['id_client']; ?>"><button type="button" class="btn btn-success btn-sm"><span class="fa fa-edit"></span></button></a> 
-										<a onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');" href="<?php echo base_url(); ?>index.php/client/hapus/<?php echo $data['id_client']; ?>"><button type="button" class="btn btn-danger btn-sm"><span class="fa fa-trash"></span></button></a>
+										<a href="<?php echo base_url(); ?>/client/edit/<?php echo $data['id_client']; ?>"><button type="button" class="btn btn-success btn-sm"><span class="fa fa-edit"></span></button></a> 
+										<a onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');" href="<?php echo base_url(); ?>/client/hapus/<?php echo $data['id_client']; ?>"><button type="button" class="btn btn-danger btn-sm"><span class="fa fa-trash"></span></button></a>
 									</td>
 								</tr>
 								<?php } ?>

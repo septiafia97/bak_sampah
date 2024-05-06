@@ -10,7 +10,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Data</a></li>
-              <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>index.php/sampah/data">Data Sampah</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>/sampah/data">Data Sampah</a></li>
               <li class="breadcrumb-item active">Edit Data Sampah</li>
             </ol>
           </div><!-- /.col -->
@@ -29,7 +29,7 @@
 						<h5 class="card-title">Edit Data Sampah</h5>
 					</div>
 					<div class="card-body">
-						<form action="<?php echo base_url();?>index.php/sampah/update" method="post">
+						<form action="<?php echo base_url();?>/sampah/update" method="post">
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="form-group">

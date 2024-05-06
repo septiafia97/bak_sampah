@@ -16,7 +16,7 @@ class Transaksi extends CI_Controller {
 			echo "
 				<script>
 					alert('Transaksi Berhasil');
-					window.location.href = '".base_url('index.php/transaksi/nota/').$data['id_transaksi']."';
+					window.location.href = '".base_url('/transaksi/nota/').$data['id_transaksi']."';
 				</script>
 			";
 		}
@@ -24,7 +24,7 @@ class Transaksi extends CI_Controller {
 			echo "
 				<script>
 					alert('Transaksi Gagal');
-					window.location.href = '".base_url('index.php/dashboard/')."';
+					window.location.href = '".base_url('/dashboard/')."';
 				</script>
 			";
 		}
@@ -44,7 +44,7 @@ class Transaksi extends CI_Controller {
 			echo "
 				<script>
 					alert('Transaksi Berhasil');
-					window.location.href = '".base_url('index.php/transaksi/nota/').$data['id_transaksi']."';
+					window.location.href = '".base_url('/transaksi/nota/').$data['id_transaksi']."';
 				</script>
 			";
 		}
@@ -52,7 +52,7 @@ class Transaksi extends CI_Controller {
 			echo "
 				<script>
 					alert('Transaksi Gagal');
-					window.location.href = '".base_url('index.php/dashboard/')."';
+					window.location.href = '".base_url('/dashboard/')."';
 				</script>
 			";
 		}
@@ -81,7 +81,7 @@ class Transaksi extends CI_Controller {
 			echo "
 				<script>
 					alert('Nota Tersimpan');
-					window.location.href = '".base_url('index.php/transaksi/nota/').$data['no_nota']."';
+					window.location.href = '".base_url('/transaksi/nota/').$data['no_nota']."';
 				</script>
 			";
 		}
@@ -89,7 +89,7 @@ class Transaksi extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menyimpan Data');
-					window.location.href = '".base_url('index.php/transaksi/nota/').$data['no_nota']."';
+					window.location.href = '".base_url('/transaksi/nota/').$data['no_nota']."';
 				</script>
 			";
 		}

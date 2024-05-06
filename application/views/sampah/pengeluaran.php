@@ -9,7 +9,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Data</a></li>
-              <li class="breadcrumb-item"><a href="<?php echo base_url('index.php/sampah/data'); ?>"> Sampah </a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url('/sampah/data'); ?>"> Sampah </a></li>
               <li class="breadcrumb-item active">Pengeluaran</li>
             </ol>
           </div><!-- /.col -->

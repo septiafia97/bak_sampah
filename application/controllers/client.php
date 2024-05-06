@@ -42,6 +42,8 @@ class Client extends CI_Controller {
 			'id_client'	=> $this->input->post('id_client'),
 			'nama'		=> $this->input->post('nama'),
 			'alamat'	=> $this->input->post('alamat'),
+			'no_telp'	=> $this->input->post('no_telp'),
+			'email'		=> $this->input->post('email'),
 		);
 		$udpate = $this->Client_m->update($data);
 		if($update = true) {
@@ -66,6 +68,8 @@ class Client extends CI_Controller {
 			'id_client'	=> $this->input->post('id_client'),
 			'nama'		=> $this->input->post('nama'),
 			'alamat'	=> $this->input->post('alamat'),
+			'no_telp'	=> $this->input->post('no_telp'),
+			'email'		=> $this->input->post('email'),
 		);
 		$simpan = $this->Client_m->simpan($data);
 		if($simpan = true) {
@@ -91,7 +95,7 @@ class Client extends CI_Controller {
 			echo "
 				<script>
 					alert('Data Berhasil Dihapus');
-					window.location.href = '".base_url('/client/data')."';
+					window.location.href = '".base_url('client/data')."';
 				</script>
 			";
 		}
@@ -99,7 +103,7 @@ class Client extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menghapus Data');
-					window.location.href = '".base_url('/client/data')."';
+					window.location.href = '".base_url('client/data')."';
 				</script>
 			";
 		}

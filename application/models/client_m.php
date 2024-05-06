@@ -18,6 +18,8 @@ class Client_m extends CI_Model {
 			'id_client'	=> $data['id_client'],
 			'nama'		=> $data['nama'],
 			'alamat'	=> $data['alamat'],
+			'no_telp'	=> $data['no_telp'],
+			'email'		=> $data['email'],
 			'jenis'		=> 'pembeli'
 		);
 		$this->db->update('tb_client', $client);
@@ -27,6 +29,8 @@ class Client_m extends CI_Model {
 			'id_client'	=> $data['id_client'],
 			'nama'		=> $data['nama'],
 			'alamat'	=> $data['alamat'],
+			'no_telp'	=> $data['no_telp'],
+			'email'		=> $data['email'],
 			'jenis'		=> 'pembeli'
 		);
 		$this->db->insert('tb_client', $client);

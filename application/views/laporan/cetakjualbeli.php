@@ -2,7 +2,7 @@
 	<div class="print">
 		<div class="print-header">
 			<hr/>
-				<a href="<?php echo base_url(); ?>index.php/laporan/jualbeli"><button type="button" class="btn btn-success btn-sm"><span class="fa fa-chevron-left"></span> Kembali</button></a>
+				<a href="<?php echo base_url(); ?>/laporan/jualbeli"><button type="button" class="btn btn-success btn-sm"><span class="fa fa-chevron-left"></span> Kembali</button></a>
 				<button type="button" class="btn btn-info btn-sm" onclick="printDiv('printMe')"><span class="fa fa-print"></span> Print</button>
 			<hr/>
 		</div>

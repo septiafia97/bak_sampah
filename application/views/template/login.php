@@ -1,14 +1,14 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url(); ?>"><b>BANK</b>Sampah</a>
+    <a href="<?php echo base_url(); ?>"><b>Green</b>Life</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Silahkan Gunakan Username dan Password untuk Masuk</p>
 
-      <form action="<?php echo base_url(); ?>index.php/auth/login" method="post">
+      <form action="<?php echo base_url(); ?>auth/login" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Username" name="username">
           <div class="input-group-append">
@@ -28,7 +28,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-               Belum Punya Akun? <a href="<?php base_url(""); ?>index.php/auth/register">Daftar</a>
+               Belum Punya Akun? <a href="<?php echo base_url(); ?>auth/register">Daftar</a>
             </div>
           </div>
           <!-- /.col -->
@@ -38,8 +38,6 @@
           <!-- /.col -->
         </div>
       </form>
-			<br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
-
 
 
     </div>

@@ -1,14 +1,37 @@
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+  <title>Guarder</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>./assets/css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="<?php echo base_url(); ?>./assets/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="<?php echo base_url(); ?>./assets/css/responsive.css" rel="stylesheet" />
+</head>
+
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url(); ?>"><b>BANK</b>Sampah</a>
+    <a href="<?php echo base_url(); ?>"><b>Green</b>Life</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Silahkan Melakukan Pendaftaran dengan Mengisi Form dibawah!</p>
 
-      <form action="<?php echo base_url(); ?>index.php/auth/simpanakun" method="post">
+      <form action="<?php echo base_url(); ?>/auth/simpanakun" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Username" name="username">
           <div class="input-group-append">
@@ -55,8 +78,6 @@
         </div>
       </form>
 <br>
-<center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
-
 
     </div>
     <!-- /.login-card-body -->

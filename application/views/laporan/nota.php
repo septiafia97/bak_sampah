@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-lg-12 col-sm-6 col-md-3">
 			<div class="card">
-				<form action="<?php echo base_url(); ?>index.php/laporan/notafilter" method="get">
+				<form action="<?php echo base_url(); ?>/laporan/notafilter" method="get">
 				<div class="card-header">
 					<h5 class="card-title">Filter Laporan</h5>
 				</div>

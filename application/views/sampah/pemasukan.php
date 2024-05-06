@@ -9,8 +9,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Data</a></li>
-              <li class="breadcrumb-item"><a href="<?php echo base_url('index.php/sampah/data'); ?>"> Sampah </a></li>
-              <li class="breadcrumb-item active">Pemasukan</li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url('/sampah/data'); ?>"> Sampah </a></li>
+              <li class="breadcrumb-item active">Transaksi</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -25,7 +25,7 @@
             <div class="col-lg-12">
                 <idv class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Pemasukan</h4>
+                        <h4 class="card-title">Transaksi</h4>
                     </div>
                     <div class="card-body">
                     

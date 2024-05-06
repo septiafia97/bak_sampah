@@ -16,15 +16,15 @@
   <title>Guarder</title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>./assets/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link href="<?php echo base_url(); ?>./assets/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="./assets/css/responsive.css" rel="stylesheet" />
+  <link href="<?php echo base_url(); ?>./assets/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <!-- header section strats -->
     <div class="hero_bg_box">
       <div class="img-box">
-        <img src="./assets/images/hero-bg.jpg" alt="">
+        <img src="<?php echo base_url(); ?>./assets/images/hero-bg.jpeg" alt="">
       </div>
     </div>
 
@@ -40,9 +40,9 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand">
               <span>
-                GREENLIFE
+                GREENLIFE🌱
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,16 +52,16 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Beranda <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="<?php echo base_url(); ?>"> Beranda <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> Tentang Kami </a>
+                  <a class="nav-link" href="<?php echo base_url(); ?>depan/about/"> Tentang Kami </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Petunjuk </a>
+                  <a class="nav-link" href="<?php echo base_url(); ?>service.html"> Petunjuk </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="guard.html"> Ulasan </a>
+                  <a class="nav-link" href="<?php echo base_url(); ?>guard.html"> Ulasan </a>
                 </li>
               </ul>
             </div>
@@ -86,79 +86,24 @@
                       </span>
                     </h1>
                     <p>
-                      Mulai peduli  dengan lingkunganmu dengan meningkatkan partisipasimu melalui bank sampah.
+                      Mulai peduli  dengan lingkungan sekitar dengan meningkatkan partisipasimu melalui bank sampah.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn-1"> Register </a>
-                      <a href="./auth" class="btn-2"> Login </a>
+                      <a href="<?php echo base_url(); ?>auth/" class="btn-2"> Login </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item ">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      Your Saftey <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod magna aliqua. Ut enim ad minim veniam
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1"> Read more </a>
-                      <a href="" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <h1>
-                      Your Saftey <br>
-                      <span>
-                        Our Responsibility
-                      </span>
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod magna aliqua. Ut enim ad minim veniam
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1"> Read more </a>
-                      <a href="" class="btn-2">Get A Quote</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container idicator_container">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
         </div>
       </div>
     </section>
     <!-- end slider section -->
   </div>
 
-  <!-- about section -->
+  <!-- tentang kami section -->
 
   <section class="about_section layout_padding">
     <div class="container">
@@ -166,7 +111,7 @@
         <div class="col-md-6 px-0">
           <div class="img_container">
             <div class="img-box">
-              <img src="./assets/images/about-img.jpg" alt="" />
+              <img src="./assets/images/about-img.png" alt="" />
             </div>
           </div>
         </div>
@@ -174,19 +119,18 @@
           <div class="detail-box">
             <div class="heading_container ">
               <h2>
-                Who Are We?
+                Tentang Kami
               </h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit
+              Website ini dibuat untuk meningkatkan partisipasi dan kepedulian masyarakat terhadap lingkungan
+              sekitar. Website ini juga menyediakan informasi tentang pengelolaan sampah yang baik dan benar.
+              Masyarakat tidak perlu khawatir lagi dengan sampah yang menumpuk di rumah. Yang perlu dilakukan
+              hanya membuka dan membaca website ini. Jika anda tertarik, klik tombol di bawah ini.
             </p>
             <div class="btn-box">
               <a href="">
-                Read More
+                Baca Selengkapnya
               </a>
             </div>
           </div>
@@ -195,7 +139,7 @@
     </div>
   </section>
 
-  <!-- end about section -->
+  <!-- end tentang kami section -->
 
   <!-- service section -->
 
@@ -203,7 +147,7 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Our services
+          Petunjuk
         </h2>
       </div>
       <div class="row">
@@ -227,7 +171,7 @@
             </div>
             <div class="detail-box">
               <h6>
-                Home Security
+                Memilah Sampah
               </h6>
               <p>
                 Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut minus tenetur corrupti excepturi ullam.
@@ -307,7 +251,7 @@
             </div>
             <div class="detail-box">
               <h6>
-                Office Security
+                Mengisi Formulir
               </h6>
               <p>
                 Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut minus tenetur corrupti excepturi ullam.
@@ -381,7 +325,7 @@
             </div>
             <div class="detail-box">
               <h6>
-                Bodyguard
+                Penjemputan Sampah
               </h6>
               <p>
                 Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut minus tenetur corrupti excepturi ullam.
@@ -405,7 +349,7 @@
     <div class="container ">
       <div class="heading_container heading_center">
         <h2>
-          What is says our clients
+          Ulasan
         </h2>
       </div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -417,7 +361,7 @@
               </div>
               <div class="detail-box">
                 <h4>
-                  Minim Veniam
+                  Orang 1
                 </h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -435,7 +379,7 @@
               </div>
               <div class="detail-box">
                 <h4>
-                  Minim Veniam
+                  Orang 2
                 </h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -453,7 +397,7 @@
               </div>
               <div class="detail-box">
                 <h4>
-                  Minim Veniam
+                  Orang 3
                 </h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -529,173 +473,76 @@
 
   <!-- end contact section -->
 
-  <!-- team section -->
-
-  <section class="team_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Guards
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
-          iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 mx-auto ">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/t1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Martin Anderson
-              </h5>
-              <h6 class="">
-                supervisor
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mx-auto ">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/t2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Denny Butler
-              </h5>
-              <h6 class="">
-                supervisor
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mx-auto ">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/t3.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Nathan Mcpherson
-              </h5>
-              <h6 class="">
-                supervisor
-              </h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View All
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end team section -->
-
   <!-- info section -->
   <section class="info_section ">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_logo">
             <a class="navbar-brand" href="index.html">
               <span>
-                Guarder
+                Bank Sampah
               </span>
             </a>
             <p>
-              dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
+              (belum diisi)
             </p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_links">
             <h5>
-              Useful Link
+              More Info
             </h5>
             <ul>
               <li>
                 <a href="">
-                  dolor sit amet, consectetur
+                  ###
                 </a>
               </li>
               <li>
                 <a href="">
-                  magna aliqua. Ut enim ad
+                  ***
                 </a>
               </li>
               <li>
                 <a href="">
-                  minim veniam,
+                  ###
                 </a>
               </li>
               <li>
                 <a href="">
-                  quisdotempor incididunt r
+                  ***
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_info">
             <h5>
-              Contact Us
+              Kontak Kami
             </h5>
           </div>
           <div class="info_contact">
             <a href="" class="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Lorem ipsum dolor sit amet,
+                Surakarta
               </span>
             </a>
             <a href="" class="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +01 1234567890
+                Phone : +62 1234567890
               </span>
             </a>
             <a href="" class="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                demo@gmail.com
+                greenlife@gmail.com
               </span>
             </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_form ">
-            <h5>
-              Newsletter
-            </h5>
-            <form action="#">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                Subscribe
-              </button>
-            </form>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -704,17 +551,6 @@
 
   <!-- end info_section -->
 
-
-
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </footer>
-  <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>

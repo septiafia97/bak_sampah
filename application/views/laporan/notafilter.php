@@ -56,7 +56,7 @@
 										<td><?php echo $data['jml']; ?></td>
 										<td><?php echo $data['harga'] * $data['jml']; ?></td>
 										<td>
-											<a href="<?php echo base_url(); ?>index.php/transaksi/nota/<?php echo $data['no_nota']; ?>"><button type="button" class="btn btn-info btn-sm"><span class="fa fa-info"></span> Detail</button></a>
+											<a href="<?php echo base_url(); ?>/transaksi/nota/<?php echo $data['no_nota']; ?>"><button type="button" class="btn btn-info btn-sm"><span class="fa fa-info"></span> Detail</button></a>
 										</td>
 									</tr>
 									<?php } ?>

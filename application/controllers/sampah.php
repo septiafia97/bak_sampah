@@ -14,7 +14,7 @@ class Sampah extends CI_Controller {
 		$this->load->view('template/footer', $data);
 		$this->load->view('template/foot');
 	}
-	public function pemasukan() {
+	public function transaksi() {
 		$username = $_SESSION['username'];
 		$data = array(
 			'datasampah' => $this->Sampah_m->datasampah(),
@@ -65,7 +65,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menghapus Data');
-					window.location.href = '".base_url('index.php/sampah/pemasukan')."';
+					window.location.href = '".base_url('/sampah/pemasukan')."';
 				</script>
 			";
 		}
@@ -94,7 +94,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Data Berhasil Ditambahkan');
-					window.location.href = '".base_url('index.php/sampah/pengeluaran')."';
+					window.location.href = '".base_url('/sampah/pengeluaran')."';
 				</script>
 			";
 		}
@@ -102,7 +102,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menambahkan Data');
-					window.location.href = '".base_url('index.php/sampah/pengeluaran')."';
+					window.location.href = '".base_url('/sampah/pengeluaran')."';
 				</script>
 			";
 		}
@@ -113,7 +113,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Data Berhasil Dihapus');
-					window.location.href = '".base_url('index.php/sampah/pengeluaran')."';
+					window.location.href = '".base_url('/sampah/pengeluaran')."';
 				</script>
 			";
 		}
@@ -121,7 +121,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menghapus Data');
-					window.location.href = '".base_url('index.php/sampah/pengeluaran')."';
+					window.location.href = '".base_url('/sampah/pengeluaran')."';
 				</script>
 			";
 		}
@@ -164,7 +164,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Data Berhasil Diperbarui');
-					window.location.href = '".base_url('index.php/sampah/data/')."';
+					window.location.href = '".base_url('/sampah/data/')."';
 				</script>
 			";
 		}
@@ -172,7 +172,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Memperbarui Data');
-					window.location.href = '".base_url('index.php/sampah/edit/').$kd_sampah."';
+					window.location.href = '".base_url('/sampah/edit/').$kd_sampah."';
 				</script>
 			";
 		}
@@ -191,7 +191,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Data Berhasil Ditambahkan');
-					window.location.href = '".base_url('index.php/sampah/data/tambah')."';
+					window.location.href = '".base_url('/sampah/data/tambah')."';
 				</script>
 			";
 		}
@@ -199,7 +199,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menambahkan Data');
-					window.location.href = '".base_url('index.php/sampah/data/tambah')."';
+					window.location.href = '".base_url('/sampah/data/tambah')."';
 				</script>
 			";
 		}
@@ -210,7 +210,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Data Berhasil Dihapus');
-					window.location.href = '".base_url('index.php/sampah/data')."';
+					window.location.href = '".base_url('/sampah/data')."';
 				</script>
 			";
 		}
@@ -218,7 +218,7 @@ class Sampah extends CI_Controller {
 			echo "
 				<script>
 					alert('Tidak Dapat Menghapus Data');
-					window.location.href = '".base_url('index.php/sampah/data')."';
+					window.location.href = '".base_url('/sampah/data')."';
 				</script>
 			";
 		}
